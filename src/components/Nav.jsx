@@ -5,9 +5,9 @@ import Navbar from "react-bootstrap/Navbar";
 
 export default function MyNav() {
   return (
-    <Navbar expand="lg">
+    <Navbar expand="lg" className="mainMenu">
       <Container>
-        <Navbar.Brand >Vlada Caban</Navbar.Brand>
+        <Navbar.Brand className="myName">Vlada Cabán</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse
           id="basic-navbar-nav"

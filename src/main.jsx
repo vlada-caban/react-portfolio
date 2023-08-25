@@ -9,6 +9,7 @@ import AboutMe from './pages/AboutMe';
 import Projects from './pages/Projects';
 import Error from './pages/Error';
 import Contact from './pages/Contact';
+import Resume from './pages/Resume';
 
 const router = createHashRouter([
   {
@@ -23,6 +24,10 @@ const router = createHashRouter([
       {
         path: '/projects',
         element: <Projects />,
+      },
+      {
+        path: '/resume',
+        element: <Resume />,
       },
       {
         path: '/contact',
