@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import App from './App.jsx';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -10,7 +10,7 @@ import Projects from './pages/Projects';
 import Error from './pages/Error';
 import Contact from './pages/Contact';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <App />,

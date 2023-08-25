@@ -7,7 +7,7 @@ export default function MyNav() {
   return (
     <Navbar expand="lg">
       <Container>
-        {/* <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand> */}
+        <Navbar.Brand >Vlada Caban</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse
           id="basic-navbar-nav"
@@ -19,6 +19,9 @@ export default function MyNav() {
             </Link>
             <Link to="/projects" className="menu">
               Projects
+            </Link>
+            <Link to="/resume" className="menu">
+              Resume
             </Link>
             <Link to="/contact" className="menu">
               Contact

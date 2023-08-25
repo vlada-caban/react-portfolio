@@ -1,16 +1,23 @@
+import profile from '../assets/profile-image.jpg'
+
 export default function AboutMe() {
   return (
+
     <div className="container pt-4">
-      <p>
-        Here will be something about me
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-        tenetur maiores, dolor iusto dolorum ullam, natus deleniti blanditiis
-        impedit suscipit sed magnam alias in, repellat expedita hic explicabo
-        architecto soluta. About us Lorem ipsum, dolor sit amet consectetur
-        adipisicing elit. Velit voluptate exercitationem quaerat pariatur
-        mollitia, excepturi, voluptatem eveniet a dolor nobis ex veniam totam
-        nostrum temporibus ad omnis nam rerum eligendi.
-      </p>
+      <div className="row">
+        <div className="col">
+          <img src={profile} className="profileImage"/>
+        </div>
+        <div className="col">
+          <p className="aboutMeText">
+            My name is Vlada Cabán (Eliseeva). I was born and raised in Omsk, Russia where I attended Omsk State
+            Technical University majoring in Computer Science. In 2009, I moved to the USA and transferred to CUNY Brooklyn College a year later. I graduated in 2014 with a BS in Computer Science. I am currently working in the Fashion industry overseeing Sourcing and Product Development of apparel. My true passion is coding and
+            problem solving. I am currently attending Coding Bootscamp at Columbia University and open to work on
+            web development projects. Please feel free to contact me to discuss any projects I could help with.
+          </p>
+          </div>
+      </div>
     </div>
+
   );
 }

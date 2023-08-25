@@ -2,6 +2,12 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  --pink: #F9C0AF;
+  --opacity-pink: #f9c0af73;
+  --dark-navy: #1F4550;
+  --green: #788F74;
+  --light-blue: #6FADDE;
+  --dark-brown: #061824;
 
 }
 
@@ -14,11 +20,28 @@ body {
 }
 
 .menu {
+  margin-top: 2%; 
   padding-left: 5%;
   width: 7em;
   text-decoration: none;
   font-weight: 500;
   color: black;
+}
+
+.profileImage {
+  border-radius: 5%;
+  height: 25rem;
+}
+
+.aboutMeText {
+  border-radius: 5%;
+  background-color: var(--opacity-pink);
+  padding: 5%;
+}
+
+.selectedMenuItem {
+  border-radius: 8px;
+  border: 1px solid transparent;
 }
 
 /* h1 {
