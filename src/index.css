@@ -1,5 +1,6 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   line-height: 1.5;
   font-weight: 400;
   --opacity-pink: #d7aaada9;
@@ -21,6 +22,11 @@ body {
   color: var(--dark-brown);
 }
 
+.imageDiv {
+  display: flex;
+  justify-content: center;
+}
+
 .mainMenu {
   background-color: var(--opacity-dark-navy);
 }
@@ -31,11 +37,22 @@ body {
   width: 7em;
   text-decoration: none;
   font-weight: 500;
-  color: black;
+  color: var(--dark-brown);
 }
 
 .myName {
 font-size: 2rem;
+}
+
+.resumeLink {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--dark-brown);
+  background-color: var(--opacity-pink);
+  padding: 1%;
+  border-radius: 5%;
+  border: 0.5px solid var(--dark-navy);
+  box-shadow: 5px 5px 5px var(--opacity-dark-navy);
 }
 
 .profileImage {
@@ -43,6 +60,10 @@ font-size: 2rem;
   border-radius: 5%;
   height: 25rem;
   box-shadow: 5px 5px 5px var(--opacity-dark-navy);
+}
+
+.skillsSection {
+  margin-top: 2%;
 }
 
 .aboutMeText {

@@ -4,7 +4,7 @@ export default function AboutMe() {
   return (
     <div className="container pt-4">
       <div className="row">
-        <div className="col-sm ">
+        <div className="col-sm imageDiv">
           <img src={profile} className="profileImage" alt="Profile Image"/>
         </div>
         <div className="col-sm">

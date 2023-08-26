@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 
 import AboutMe from './pages/AboutMe';
-import Projects from './pages/Projects';
+import Portfolio from './pages/Portfolio';
 import Error from './pages/Error';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
@@ -22,8 +22,8 @@ const router = createHashRouter([
         element: <AboutMe />,
       },
       {
-        path: '/projects',
-        element: <Projects />,
+        path: '/portfolio',
+        element: <Portfolio />,
       },
       {
         path: '/resume',

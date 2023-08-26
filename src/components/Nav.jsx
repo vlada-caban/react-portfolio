@@ -7,7 +7,7 @@ export default function MyNav() {
   return (
     <Navbar expand="lg" className="mainMenu">
       <Container>
-        <Navbar.Brand className="myName">Vlada Cabán</Navbar.Brand>
+        <Navbar.Brand className="myName" href="/">Vlada Cabán</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse
           id="basic-navbar-nav"
@@ -17,8 +17,8 @@ export default function MyNav() {
             <Link to="/" className="menu">
               About Me
             </Link>
-            <Link to="/projects" className="menu">
-              Projects
+            <Link to="/portfolio" className="menu">
+              Portfolio
             </Link>
             <Link to="/resume" className="menu">
               Resume

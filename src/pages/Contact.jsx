@@ -1,35 +1,45 @@
-// export default function Contact() {
-//   return (
-//     <div className="container pt-4">
-//       Here will be contact form
-//     </div>
-//   );
-// }
-
 import Button from 'react-bootstrap/Button';
+import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
 
 export default function Contact() {
   return (
-    <Form>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Your Email</Form.Label>
-        <Form.Control type="email" placeholder="Enter your email" />
-      </Form.Group>
+    <div className="container pt-4">
+      <Form>
+        <Form.Group className="mb-3" >
+          <FloatingLabel
+            controlId="floatingInput"
+            label="Email address"
+            className="mb-3"
+          >
+            <Form.Control type="email" placeholder="name@example.com" />
+          </FloatingLabel>
+        </Form.Group>
 
-      <Form.Group className="mb-3">
-        <Form.Label>Your Name</Form.Label>
-        <Form.Control type="text" placeholder="Enter your name" />
-      </Form.Group>
+        <Form.Group className="mb-3">
+          <FloatingLabel
+            controlId="floatingInput"
+            label="Your name"
+            className="mb-3"
+          >
+            <Form.Control type="text" placeholder="Your name here" />
+          </FloatingLabel>
+        </Form.Group>
 
-      <Form.Group className="mb-3">
-        <Form.Label>Details</Form.Label>
-        <Form.Control type="text" placeholder="Any details you would like to share" />
-      </Form.Group>
+        <Form.Group className="mb-3">
+          <FloatingLabel controlId="floatingTextarea" label="Message">
+            <Form.Control
+              as="textarea"
+              placeholder="Your message here"
+              style={{ height: '100px' }}
+            />
+          </FloatingLabel>
+        </Form.Group>
 
-      <Button variant="secondary" type="submit">
-        Submit
-      </Button>
-    </Form>
+        <Button variant="secondary" type="submit">
+          Submit
+        </Button>
+      </Form>
+    </div>
   );
 }
