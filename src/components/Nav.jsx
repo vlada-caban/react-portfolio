@@ -14,7 +14,7 @@ export default function MyNav() {
           className="justify-content-center"
         >
           <Nav>
-            <Link to="/" className="menu">
+            <Link to="/" className="menu active">
               About Me
             </Link>
             <Link to="/portfolio" className="menu">
