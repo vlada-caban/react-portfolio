@@ -1,35 +1,37 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+
+
 
 export default function MyNav() {
   return (
     <Navbar expand="lg" className="mainMenu">
       <Container>
         <Navbar.Brand>
-          <Link to="/" className="myName">
+          <NavLink to="/" className="myName">
             Vlada Cabán
-          </Link>
+          </NavLink>
           </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse
           id="basic-navbar-nav"
           className="justify-content-center"
         >
-          <Nav>
-            <Link to="/" className="menu nav-link">
+          <Nav id="navigation">
+            <NavLink to="/" className="menu nav-link">
               About Me
-            </Link>
-            <Link to="/portfolio" className=" nav-link menu">
+            </NavLink>
+            <NavLink to="/portfolio" className=" nav-link menu">
               Portfolio
-            </Link>
-            <Link to="/resume" className="nav-link menu">
+            </NavLink>
+            <NavLink to="/resume" className="nav-link menu">
               Resume
-            </Link>
-            <Link to="/contact" className="nav-link menu">
+            </NavLink>
+            <NavLink to="/contact" className="nav-link menu">
               Contact
-            </Link>
+            </NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>

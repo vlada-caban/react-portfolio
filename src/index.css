@@ -23,6 +23,20 @@ body {
   color: var(--dark-brown);
 }
 
+.aboutMeSection {
+  background-color: var(--off-white);
+  padding: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 0.5px solid transparent;
+  box-shadow: 5px 5px 5px var(--opacity-dark-navy);
+}
+
+.aboutMeText {
+  margin-top: 1%;
+  padding: 5%;
+}
+
 .imageDiv {
   display: flex;
   justify-content: center;
@@ -43,8 +57,9 @@ body {
   color: var(--off-white);
 }
 
-.menu:hover{
+.menu:hover:active{
   color: var(--dark-brown);
+  text-decoration: underline;
 }
 
 .myFooter {
@@ -64,6 +79,10 @@ body {
   color: var(--off-white);
 }
 
+#navigation a.active{
+  text-decoration: underline;
+}
+
 .resumeLink {
   text-decoration: none;
   font-weight: 500;
@@ -81,38 +100,27 @@ body {
 }
 
 .profileImage {
-  /* margin-top: 3%; */
   margin: 3% auto;
   height: 20rem;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.603);
 }
 
-.projectCard {
-  width: 20rem;
+/* .projectCardDetails {
+  display:none;
 }
+
+.projectCard:hover .projectCardDetails{
+  opacity: 75%;
+  border: 0.5px solid var(--dark-navy);
+  display: block;
+  transition: display 0.5s ease;
+} */
 
 .projectCard:hover {
   opacity: 75%;
   border: 0.5px solid var(--dark-navy);
 }
 
-.skillsSection {
-  margin-top: 2%;
-}
-
-.aboutMeSection {
-  background-color: var(--off-white);
-  padding: 1%;
-  margin-left: 5%;
-  margin-right: 5%;
-  border: 0.5px solid transparent;
-  box-shadow: 5px 5px 5px var(--opacity-dark-navy);
-}
-
-.aboutMeText {
-  margin-top: 1%;
-  padding: 5%;
-}
 
 .projectsWrapper {
   display: grid;
@@ -122,6 +130,7 @@ body {
 }
 
 .projectCard {
+  width: 20rem;
   box-shadow: 5px 5px 5px var(--opacity-dark-navy);
   background-color: var(--off-white);
 }
@@ -129,6 +138,10 @@ body {
 .selectedMenuItem {
   border-radius: 8px;
   border: 1px solid transparent;
+}
+
+.skillsSection {
+  margin-top: 2%;
 }
 
 /* h1 {

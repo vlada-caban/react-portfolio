@@ -1,6 +1,5 @@
 // import ProjectCard from '../components/ProjectCard';
 import { projects } from "../projectsdata";
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 export default function Portfolio() {
@@ -10,7 +9,7 @@ export default function Portfolio() {
    
       <Card key = {project.image} className="projectCard">
       <Card.Img variant="top" src={project.image} />
-      <Card.Body>
+      <Card.Body className="projectCardDetails">
         <Card.Title>{project.title}</Card.Title>
         <Card.Text>
           To see more details click on links below.
@@ -19,8 +18,6 @@ export default function Portfolio() {
             <Card.Link href={project.githublink}>GitHub Repo Link</Card.Link>
       </Card.Body>
       </Card>
-
-
       ))}
       
     </div>
