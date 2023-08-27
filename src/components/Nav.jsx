@@ -18,16 +18,16 @@ export default function MyNav() {
           className="justify-content-center"
         >
           <Nav>
-            <Link to="/" className="menu">
+            <Link to="/" className="menu nav-link">
               About Me
             </Link>
-            <Link to="/portfolio" className="menu">
+            <Link to="/portfolio" className=" nav-link menu">
               Portfolio
             </Link>
-            <Link to="/resume" className="menu">
+            <Link to="/resume" className="nav-link menu">
               Resume
             </Link>
-            <Link to="/contact" className="menu">
+            <Link to="/contact" className="nav-link menu">
               Contact
             </Link>
           </Nav>
