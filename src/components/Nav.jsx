@@ -3,11 +3,9 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
-
-
 export default function MyNav() {
   return (
-    <Navbar expand="lg" className="mainMenu">
+    <Navbar expand="lg" className="mainMenu" variant="dark">
       <Container>
         <Navbar.Brand>
           <NavLink to="/" className="myName">
@@ -20,16 +18,16 @@ export default function MyNav() {
           className="justify-content-center"
         >
           <Nav id="navigation">
-            <NavLink to="/" className="menu nav-link">
+            <NavLink to="/" className="menu">
               About Me
             </NavLink>
-            <NavLink to="/portfolio" className=" nav-link menu">
+            <NavLink to="/portfolio" className="menu">
               Portfolio
             </NavLink>
-            <NavLink to="/resume" className="nav-link menu">
+            <NavLink to="/resume" className="menu">
               Resume
             </NavLink>
-            <NavLink to="/contact" className="nav-link menu">
+            <NavLink to="/contact" className="menu">
               Contact
             </NavLink>
           </Nav>

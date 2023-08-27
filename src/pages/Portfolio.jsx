@@ -6,8 +6,8 @@ export default function Portfolio() {
   return (
     <div className="container pt-4 projectsWrapper">
       {projects.map((project) => ( 
-   
-      <Card key = {project.image} className="projectCard">
+
+        <Card key={project.image} className="projectCard">
       <Card.Img variant="top" src={project.image} />
       <Card.Body className="projectCardDetails">
         <Card.Title>{project.title}</Card.Title>
