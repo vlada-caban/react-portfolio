@@ -38,6 +38,16 @@ body {
   padding: 5%;
 }
 
+.footerLink {
+  padding: 4%; 
+  color: var(--off-white);
+  text-decoration: none;
+}
+
+.footerLink:hover {
+  color: var(--pink);
+}
+
 .imageDiv {
   display: flex;
   justify-content: center;
