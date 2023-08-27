@@ -3,7 +3,7 @@ import profile from '../assets/profile-image.jpg'
 export default function AboutMe() {
   return (
     <div className="container pt-4">
-      <div className="row">
+      <div className="row aboutMeSection">
         <div className="col-sm imageDiv">
           <img src={profile} className="profileImage" alt="Profile Image"/>
         </div>

@@ -9,6 +9,7 @@
   --green: #788F74;
   --light-blue: #6FADDE;
   --dark-brown: #061824;
+  --off-white: #F7FAFE;
 }
 
 /* background image downloaded from unsplash.com*/
@@ -32,7 +33,7 @@ body {
 }
 
 .menu {
-  margin-top: 2%; 
+  margin-top: 2%;
   padding-left: 5%;
   width: 7em;
   text-decoration: none;
@@ -41,38 +42,76 @@ body {
 }
 
 .myName {
-font-size: 2rem;
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--dark-brown);
 }
 
 .resumeLink {
   text-decoration: none;
   font-weight: 500;
   color: var(--dark-brown);
-  background-color: var(--opacity-pink);
+  background-color: var(--pink);
   padding: 1%;
   border-radius: 5%;
   border: 0.5px solid var(--dark-navy);
   box-shadow: 5px 5px 5px var(--opacity-dark-navy);
 }
 
+.resumeLink:hover {
+  background-color: var(--opacity-pink);
+  box-shadow: none;
+}
+
 .profileImage {
   margin-top: 3%;
-  border-radius: 5%;
-  height: 25rem;
+  height: 20rem;
   box-shadow: 5px 5px 5px var(--opacity-dark-navy);
+}
+
+.projectCard {
+  width: 20rem;
+}
+
+.projectCard:hover {
+  opacity: 75%;
+  border: 0.5px solid var(--dark-navy);
 }
 
 .skillsSection {
   margin-top: 2%;
 }
 
+.aboutMeSection {
+  background-color: var(--off-white);
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 0.5px solid transparent;
+  box-shadow: 5px 5px 5px var(--opacity-dark-navy);
+}
+
 .aboutMeText {
   margin-top: 3%;
-  border-radius: 5%;
-  border: 0.5px solid transparent;
-  background-color: var(--pink);
+  /* border-radius: 5%; */
+  border: 0.5px solid var(--opacity-dark-navy);
   box-shadow: 5px 5px 5px var(--opacity-dark-navy);
   padding: 5%;
+}
+
+.projectsWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+  gap: 5rem;
+  justify-content: center;
+}
+
+.projectCard {
+  box-shadow: 5px 5px 5px var(--opacity-dark-navy);
+  background-color: var(--off-white);
 }
 
 .selectedMenuItem {

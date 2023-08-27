@@ -7,14 +7,18 @@ export default function MyNav() {
   return (
     <Navbar expand="lg" className="mainMenu">
       <Container>
-        <Navbar.Brand className="myName" href="/">Vlada Cabán</Navbar.Brand>
+        <Navbar.Brand>
+          <Link to="/" className="myName">
+            Vlada Cabán
+          </Link>
+          </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse
           id="basic-navbar-nav"
           className="justify-content-center"
         >
           <Nav>
-            <Link to="/" className="menu active">
+            <Link to="/" className="menu">
               About Me
             </Link>
             <Link to="/portfolio" className="menu">
