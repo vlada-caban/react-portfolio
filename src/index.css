@@ -20,6 +20,7 @@ body {
   min-height: 100vh;
   background-image: url("./assets/about-background-opacity.jpg");
   background-size: auto 100%;
+  /* background-size: 100% 100%; */
   color: var(--dark-navy);
 }
 
@@ -32,6 +33,44 @@ body {
   margin: auto;
   border: 0.5px solid transparent;
   box-shadow: 5px 5px 5px var(--opacity-dark-navy);
+
+}
+
+.contactTitle{
+  margin-top: 3%;
+  text-align: center;
+}
+
+.contactFormSection{
+  background-color: var(--off-white);
+    max-width: 1000px;
+    height: 600px;
+    margin: auto;
+    border: 0.5px solid transparent;
+    box-shadow: 5px 5px 5px var(--opacity-dark-navy);
+}
+
+.contactFormInputs{
+  margin: 5%;
+}
+
+.contactBtn{
+  position: absolute;
+  left: 50%;
+  padding: 0.5%;
+  border-radius: 10%;
+  border: 0.5px solid var(--opacity-dark-navy);
+  box-shadow: 5px 5px 5px var(--opacity-dark-navy);
+}
+
+.contactBtn:hover {
+  background-color: var(--opacity-dark-navy);
+  box-shadow: none;
+  color: var(--off-white)
+}
+
+.formInput{
+  margin: 5%;
 }
 
 .aboutMeText {
@@ -52,9 +91,10 @@ body {
 .imageDiv {
   display: flex;
   justify-content: center;
-  margin: 2% auto;
+  /* margin: 2% auto; */
   background-image: url("./assets/background.jpg");
-  background-size: auto 100%;
+  /* background-size: auto 100%; */
+  background-size: 100% 100%;
 }
 
 .mainMenu {
@@ -78,6 +118,7 @@ body {
   text-align: center;
   padding: 20px;
   position: fixed;
+  margin-top: 2%;
   left: 0;
   bottom: 0;
   height: 60px;
