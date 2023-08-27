@@ -8,6 +8,7 @@
   --dark-navy: #061824;
   --opacity-dark-navy: #061824c5;
   --off-white: #F7FAFE;
+  --light-gray: #d1d3d6;
 
 }
 
@@ -91,6 +92,11 @@ body {
   color: var(--off-white);
 }
 
+.lineBetween{
+  width: 75%;
+  align-self: center;
+}
+
 #navigation a.active{
   color: var(--pink);
   text-decoration: underline;
@@ -129,23 +135,49 @@ body {
   transition: display 0.5s ease;
 } */
 
-.projectCard:hover {
+.projectCard:hover{
   opacity: 75%;
   border: 0.5px solid var(--dark-navy);
 }
 
-
 .projectsWrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
-  gap: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 20rem));
+  gap: 3rem;
   justify-content: center;
 }
 
 .projectCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 20rem;
   box-shadow: 5px 5px 5px var(--opacity-dark-navy);
   background-color: var(--off-white);
+}
+
+.projectCardLink{
+  text-decoration: none;
+}
+
+.projectCardFooter{
+  color: var(--dark-navy);
+}
+
+.projectCardDetails{
+  /* border: 1px solid var(--opacity-dark-navy); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.projectCardImage{
+  margin:4%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--light-gray);
 }
 
 .selectedMenuItem {
