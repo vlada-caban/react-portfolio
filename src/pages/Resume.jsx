@@ -1,7 +1,7 @@
 export default function Resume() {
   return (
     <div className="container pt-4">
-
+      <div className="resumeSection">
         <div className="resumeLinkSection">
             <a href="https://drive.google.com/file/d/1iSbJS6akAlQLaA7BhliMTX8YssaXqkUs/view?usp=sharing" className="resumeLink" target="blank">Download resume </a>
         </div>
@@ -18,7 +18,7 @@ export default function Resume() {
                 <li>React</li>
             </ul>
         </div>
-        
+     </div>
     </div>
   );
 }

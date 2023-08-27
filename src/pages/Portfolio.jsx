@@ -1,9 +1,10 @@
-// import ProjectCard from '../components/ProjectCard';
 import { projects } from "../projectsdata";
 import Card from 'react-bootstrap/Card';
 
 export default function Portfolio() {
   return (
+    <div>
+      <h2 className="portfolioTitle">My Projects</h2>
     <div className="container pt-4 projectsWrapper">
       {projects.map((project) => (
         <a href={project.githublink} target="blank" key={project.image} className="projectCardLink">
@@ -25,6 +26,9 @@ export default function Portfolio() {
           </Card>
         </a>
       ))}
+      <br />
+      <br />
+    </div>
     </div>
   );
 }

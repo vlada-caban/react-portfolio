@@ -20,10 +20,10 @@ body {
   min-height: 100vh;
   background-image: url("./assets/about-background-opacity.jpg");
   background-size: auto 100%;
-  /* background-size: 100% 100%; */
   color: var(--dark-navy);
 }
 
+/* About me section css */
 .aboutMeSection {
   background-color: var(--off-white);
   max-width: 1000px;
@@ -33,28 +33,51 @@ body {
   margin: auto;
   border: 0.5px solid transparent;
   box-shadow: 5px 5px 5px var(--opacity-dark-navy);
-
 }
 
-.contactTitle{
+.imageDiv {
+  display: flex;
+  justify-content: center;
+  /* margin: 2% auto; */
+  background-image: url("./assets/background.jpg");
+  /* background-size: auto 100%; */
+  background-size: 100% 100%;
+}
+
+.profileImage {
+  margin: 3% auto;
+  height: 20rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.603);
+}
+
+.aboutMeTitle {
+  text-align: center;
+}
+
+.aboutMeText {
+  padding: 1%;
+}
+
+/* Contact form section css */
+.contactTitle {
   margin-top: 3%;
   text-align: center;
 }
 
-.contactFormSection{
+.contactFormSection {
   background-color: var(--off-white);
-    max-width: 1000px;
-    height: 600px;
-    margin: auto;
-    border: 0.5px solid transparent;
-    box-shadow: 5px 5px 5px var(--opacity-dark-navy);
+  max-width: 1000px;
+  height: 600px;
+  margin: auto;
+  border: 0.5px solid transparent;
+  box-shadow: 5px 5px 5px var(--opacity-dark-navy);
 }
 
-.contactFormInputs{
+.contactFormInputs {
   margin: 5%;
 }
 
-.contactBtn{
+.contactBtn {
   position: absolute;
   left: 50%;
   padding: 0.5%;
@@ -69,17 +92,26 @@ body {
   color: var(--off-white)
 }
 
-.formInput{
+.formInput {
   margin: 5%;
 }
 
-.aboutMeText {
-  margin-top: 1%;
-  padding: 5%;
+/* Footer section css */
+.myFooter {
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  margin-top: 2%;
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  background-color: var(--opacity-dark-navy);
+  color: var(--off-white);
 }
 
 .footerLink {
-  padding: 4%; 
+  padding: 4%;
   color: var(--off-white);
   text-decoration: none;
 }
@@ -88,15 +120,7 @@ body {
   color: var(--pink);
 }
 
-.imageDiv {
-  display: flex;
-  justify-content: center;
-  /* margin: 2% auto; */
-  background-image: url("./assets/background.jpg");
-  /* background-size: auto 100%; */
-  background-size: 100% 100%;
-}
-
+/* Main menu section css */
 .mainMenu {
   background-color: var(--opacity-dark-navy);
 }
@@ -114,18 +138,6 @@ body {
   color: var(--pink);
 }
 
-.myFooter {
-  text-align: center;
-  padding: 20px;
-  position: fixed;
-  margin-top: 2%;
-  left: 0;
-  bottom: 0;
-  height: 60px;
-  width: 100%;
-  background-color: var(--opacity-dark-navy);
-  color: var(--off-white);
-}
 .myName {
   font-size: 2rem;
   text-decoration: none;
@@ -133,14 +145,91 @@ body {
   color: var(--off-white);
 }
 
-.lineBetween{
+#navigation a.active {
+  color: var(--pink);
+  text-decoration: underline;
+}
+
+/* Portfolio / projects section */
+
+.portfolioTitle {
+ text-align: center;
+ margin-top: 2%;
+}
+
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20rem;
+  box-shadow: 5px 5px 5px var(--opacity-dark-navy);
+  background-color: var(--off-white);
+}
+
+.projectCard:hover {
+  opacity: 75%;
+  border: 0.5px solid var(--dark-navy);
+}
+
+.projectsWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 20rem));
+  gap: 3rem;
+  justify-content: center;
+}
+
+/* .projectCardDetails {
+  display:none;
+}
+
+.projectCard:hover .projectCardDetails{
+  opacity: 75%;
+  border: 0.5px solid var(--dark-navy);
+  display: block;
+  transition: display 0.5s ease;
+} */
+
+.lineBetween {
   width: 75%;
   align-self: center;
 }
 
-#navigation a.active{
-  color: var(--pink);
-  text-decoration: underline;
+.projectCardLink {
+  text-decoration: none;
+}
+
+.projectCardFooter {
+  color: var(--dark-navy);
+}
+
+.projectCardDetails {
+  /* border: 1px solid var(--opacity-dark-navy); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.projectCardImage {
+  margin: 4%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--light-gray);
+}
+
+/* Resume section css */
+.resumeSection {
+  background-color: var(--off-white);
+  max-width: 1000px;
+  height: 600px;
+  margin: auto;
+  border: 0.5px solid transparent;
+  box-shadow: 5px 5px 5px var(--opacity-dark-navy);
+}
+
+.resumeLinkSection{
+  margin: 5%;
 }
 
 .resumeLink {
@@ -159,114 +248,7 @@ body {
   box-shadow: none;
 }
 
-.profileImage {
-  margin: 3% auto;
-  height: 20rem;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.603);
-}
-
-/* .projectCardDetails {
-  display:none;
-}
-
-.projectCard:hover .projectCardDetails{
-  opacity: 75%;
-  border: 0.5px solid var(--dark-navy);
-  display: block;
-  transition: display 0.5s ease;
-} */
-
-.projectCard:hover{
-  opacity: 75%;
-  border: 0.5px solid var(--dark-navy);
-}
-
-.projectsWrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(12rem, 20rem));
-  gap: 3rem;
-  justify-content: center;
-}
-
-.projectCard {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 20rem;
-  box-shadow: 5px 5px 5px var(--opacity-dark-navy);
-  background-color: var(--off-white);
-}
-
-.projectCardLink{
-  text-decoration: none;
-}
-
-.projectCardFooter{
-  color: var(--dark-navy);
-}
-
-.projectCardDetails{
-  /* border: 1px solid var(--opacity-dark-navy); */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.projectCardImage{
-  margin:4%;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--light-gray);
-}
-
-.selectedMenuItem {
-  border-radius: 8px;
-  border: 1px solid transparent;
-}
-
 .skillsSection {
   margin-top: 2%;
+  margin-left: 5%;
 }
-
-/* h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-
-button:hover {
-  border-color: #646cff;
-}
-
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-} */
-
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-
-  a:hover {
-    color: #747bff;
-  }
-
-  button {
-    background-color: #f9f9f9;
-  }
-} */
