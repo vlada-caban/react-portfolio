@@ -8,6 +8,10 @@ const [name, setName] = useState('');
 const [message, setMessage] = useState('');
 const [errorMessage, setErrorMessage] = useState('');
 
+const handleFocusOut = (e) = {
+
+}
+
   const handleInputChange = (e) => {
     const { target } = e;
     const inputType = target.name; 
@@ -24,6 +28,11 @@ const [errorMessage, setErrorMessage] = useState('');
 
   const handleFormSubmit = (e) => {
       e.preventDefault();
+
+    if (!email || !name || !message) {
+      setErrorMessage('Please fill in all the fields');
+      return;
+    }
 
     if (!validateEmail(email)) {
       setErrorMessage('Email in invalid');
@@ -69,6 +78,7 @@ const [errorMessage, setErrorMessage] = useState('');
           value={message}
           name="message"
           onChange={handleInputChange}
+          onFocusOut={handleFocusOut}
           type="textarea"
           rows="5"
           placeholder="Enter your message here"
@@ -80,7 +90,7 @@ const [errorMessage, setErrorMessage] = useState('');
       </form>
       {errorMessage && (
         <div>
-          <p className="error-text">{errorMessage}</p>
+          <p className="error-text errorMessageContact">{errorMessage}</p>
         </div>
       )}
     </div>
