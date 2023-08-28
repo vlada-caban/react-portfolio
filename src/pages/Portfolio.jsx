@@ -1,4 +1,4 @@
-import { projects } from "../projectsdata";
+import { projects } from "../projectsdata.jsx";
 import Card from 'react-bootstrap/Card';
 
 export default function Portfolio() {
