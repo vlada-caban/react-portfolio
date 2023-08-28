@@ -8,10 +8,6 @@ const [name, setName] = useState('');
 const [message, setMessage] = useState('');
 const [errorMessage, setErrorMessage] = useState('');
 
-const handleFocusOut = (e) = {
-
-}
-
   const handleInputChange = (e) => {
     const { target } = e;
     const inputType = target.name; 
@@ -78,7 +74,6 @@ const handleFocusOut = (e) = {
           value={message}
           name="message"
           onChange={handleInputChange}
-          onFocusOut={handleFocusOut}
           type="textarea"
           rows="5"
           placeholder="Enter your message here"
