@@ -5,7 +5,7 @@
 
 My web developer Portfolio using React with information about me, my projects, resume and contact form.  
 
-Link to deployed application: 
+Link to deployed application: https://vlada-caban.github.io/react-portfolio/
 
 ## Table of Contents
 
