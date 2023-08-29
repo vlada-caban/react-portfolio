@@ -24,7 +24,7 @@ To install necessary dependencies, run the following command:
 
 Use navigation menu at the top to see sections About Me, Portfolio, Resume and Contact. 
 
-WHen visiting first time, About Me section is showing by default: 
+When visiting for the first time, About Me section is showing by default: 
 
 ![aboutme](./public/assets/images/aboutme.png) 
 
