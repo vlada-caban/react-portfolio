@@ -7,7 +7,7 @@ export default function Footer() {
 
                 <a href="https://github.com/vlada-caban" target="blank" className="footerLink"><i className="bi bi-github" ></i> GitHub</a>
 
-                <a href="https://www.instagram.com/vladaeliseeva/" target="blank" className="footerLink"><i className="bi bi-instagram"></i> Instagram</a>
+            <a href="mailto:veliseeva.ny@gmail.com" className="footerLink"><i className="bi bi-envelope"></i> Email</a>
         </footer>
     );
 }

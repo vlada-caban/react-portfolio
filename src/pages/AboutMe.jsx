@@ -1,4 +1,5 @@
 import profile from '../assets/profile-image.jpg'
+import { Link } from "react-router-dom";
 
 export default function AboutMe() {
   return (
@@ -15,6 +16,11 @@ export default function AboutMe() {
             problem solving. I am currently attending Coding Bootscamp at Columbia University and open to work on
             web development projects. Please feel free to contact me to discuss any projects I could help with.
           </p>
+           
+          <p className='text-center'><Link to="/portfolio">
+            See my projects
+          </Link></p>
+          
           </div>
       </div>
       <br/>

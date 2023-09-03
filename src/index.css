@@ -230,6 +230,10 @@ body {
   color: var(--dark-navy);
 }
 
+.projectCardFooter:hover {
+  font-weight: 600;
+}
+
 .projectCardDetails {
   /* border: 1px solid var(--opacity-dark-navy); */
   display: flex;

@@ -7,7 +7,7 @@ export default function Portfolio() {
       <h2 className="portfolioTitle">My Projects</h2>
       <div className="container pt-4 projectsWrapper">
         {projects.map((project) => (
-          <a href={project.githublink} target="blank" key={project.image} className="projectCardLink">
+          <a href={project.deployedlink} target="blank" key={project.image} className="projectCardLink">
             <Card className="projectCard">
               <div className="projectCardImage">
                 <Card.Img variant="top" src={project.image} />

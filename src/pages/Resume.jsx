@@ -1,9 +1,12 @@
+import resumefile from '../assets/vcabanresume.pdf'
+
 export default function Resume() {
   return (
     <div className="container pt-4">
       <div className="resumeSection">
         <div className="resumeLinkSection">
-            <a href="https://drive.google.com/file/d/1iSbJS6akAlQLaA7BhliMTX8YssaXqkUs/view?usp=sharing" className="resumeLink" target="blank">Download resume </a>
+          {/* <a href="https://drive.google.com/file/d/1tFgBka3ZvUK2g9S3hJPQ11gw42ncz-Uw/view?usp=sharing" className="resumeLink" target="blank">Download resume</a> */}
+          <a href={resumefile} className="resumeLink" download target="blank">Download resume</a>
         </div>
 
         <div className='skillsSection'>
