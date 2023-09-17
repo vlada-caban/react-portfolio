@@ -19,6 +19,8 @@ export default function Resume() {
                 <li>NoSQL / MongoDB</li>
                 <li>Node.js / Express</li>
                 <li>React</li>
+                <li>Material UL</li>
+                <li>Bootstrap / React Bootstrap</li>
             </ul>
         </div>
      </div>

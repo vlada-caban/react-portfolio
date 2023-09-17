@@ -16,7 +16,7 @@ export default function Portfolio() {
               <Card.Body className="projectCardDetails">
                 <Card.Title>{project.title}</Card.Title>
                 <Card.Text>
-                  To see more details click on links below.
+                  {project.description} 
                 </Card.Text>
                 <div >
                   <Card.Link href={project.deployedlink} className="projectCardFooter">Deployed App Link</Card.Link>
