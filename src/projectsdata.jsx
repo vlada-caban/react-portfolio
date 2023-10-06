@@ -11,7 +11,7 @@ export const projects = [
     title: "PropertyPulse",
     image: propertypulseproject,
     description: "MongoDB / Express.js / React / Node.js plus GraphQL stack application to browse real estate listings and talk to others about listings and all things real estate.",
-    deployedlink: "https://radiant-bayou-10994-4d4c2b2a5c96.herokuapp.com/",
+    deployedlink: "https://github.com/vlada-caban/real-estate-app",
     githublink: "https://github.com/vlada-caban/real-estate-app",
   },
   {
@@ -46,7 +46,7 @@ export const projects = [
     title: "TechBlog",
     image: techblogproject,
     description: "This project follows MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.",
-    deployedlink: "https://shrouded-dusk-91199-379bcd75a9dc.herokuapp.com/",
+    deployedlink: "https://github.com/vlada-caban/tech-blog",
     githublink: "https://github.com/vlada-caban/tech-blog",
   },
   

@@ -5,7 +5,6 @@ export default function Resume() {
     <div className="container pt-4">
       <div className="resumeSection">
         <div className="resumeLinkSection">
-          {/* <a href="https://drive.google.com/file/d/1tFgBka3ZvUK2g9S3hJPQ11gw42ncz-Uw/view?usp=sharing" className="resumeLink" target="blank">Download resume</a> */}
           <a href={resumefile} className="resumeLink" download target="blank">Download resume</a>
         </div>
 
@@ -19,6 +18,7 @@ export default function Resume() {
                 <li>NoSQL / MongoDB</li>
                 <li>Node.js / Express</li>
                 <li>React</li>
+                <li>GraphQL</li>
                 <li>Material UL</li>
                 <li>Bootstrap / React Bootstrap</li>
             </ul>
